@@ -55,6 +55,8 @@ The implementation supports parametric types and nested dual numbers for higher-
 using Pkg
 Pkg.activate(".")
 Pkg.instantiate()
+```
+
 
 ## Package Load
 include("src/DualNumbersAD.jl")
