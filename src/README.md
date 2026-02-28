@@ -59,8 +59,10 @@ Pkg.instantiate()
 
 
 ## Package Load
+```julia
 include("src/DualNumbersAD.jl")
 using .DualNumbersAD
+```
 
 ## Polynomial Funcrtion Ex
 
@@ -75,6 +77,7 @@ deriv2(f, 2.0)     # Second derivative at x = 2
 ## expected output
 
 f'(2) = 14
+
 f''(2) = 12
 
 ## Trigonometric and Exponential Function
@@ -85,6 +88,7 @@ deriv(g, 4.0)
 deriv2(g, 4.0)
 
 ## expected output
+
 deriv(g, 4.0)
 54.1945064
 
