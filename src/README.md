@@ -63,10 +63,11 @@ Pkg.instantiate()
 
 include("src/DualNumbersAD.jl")
     using .DualNumbersAD
-    
+
 ```
 
 ## Polynomial Funcrtion Ex
+```julia
 
 using .DualNumbersAD
 
@@ -74,7 +75,7 @@ f(x) = x^3 + 2x + 1
 
 deriv(f, 2.0)      # First derivative at x = 2
 deriv2(f, 2.0)     # Second derivative at x = 2
-
+```
 
 ## expected output
 
