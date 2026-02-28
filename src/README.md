@@ -60,8 +60,10 @@ Pkg.instantiate()
 
 ## Package Load
 ```julia
+
 include("src/DualNumbersAD.jl")
-using .DualNumbersAD
+    using .DualNumbersAD
+    
 ```
 
 ## Polynomial Funcrtion Ex
