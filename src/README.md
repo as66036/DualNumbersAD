@@ -3,7 +3,7 @@
 Dual Number Arithmetic for Automatic Differentiation in Julia  
 Course: Introduction to Scientific Computing  
 Instructor: Dr. Hayri Sezer  
-Due Date: February 18, 2026  
+  
 
 ---
 
@@ -63,6 +63,7 @@ include("src/DualNumbersAD.jl")
 using .DualNumbersAD
 
 ## Polynomial Funcrtion Ex
+
 using .DualNumbersAD
 
 f(x) = x^3 + 2x + 1
@@ -72,6 +73,22 @@ deriv2(f, 2.0)     # Second derivative at x = 2
 
 
 ## expected output
-f'(2) = 14
 
+f'(2) = 14
 f''(2) = 12
+
+## Trigonometric and Exponential Function
+
+g(x) = sin(x) + exp(x) + sqrt(x)
+
+deriv(g, 4.0)
+deriv2(g, 4.0)
+
+## expected output
+deriv(g, 4.0)
+54.1945064
+
+deriv2(g, 4.0)
+55.3237025
+
+This project demonstrates the implementation of dual number arithmetic in Julia using multiple dispatch and parametric types. By overloading core operators and elementary functions, the system enables efficient and exact computation of first- and second-order derivatives through automatic differentiation.
